@@ -1,0 +1,23 @@
+[project]
+name = "langchain-course"
+version = "0.1.0"
+description = "LangChain course application"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "black>=26.5.1",
+    "isort>=9.0.1",
+    "langchain>=1.3.18",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.6.0",
+    "langchain-tavily>=0.2.18",
+    "python-dotenv>=1.2.3",
+    "tavily-python>=0.8.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.black]
+line-length = 88
+target-version = ['py314']
